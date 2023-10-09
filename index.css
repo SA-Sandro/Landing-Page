@@ -123,20 +123,21 @@ html {
 }
 
 .cuerpo {
+    font-size: 1.2rem;
     padding: 5%;
 }
 
 .sabermas {
     display: flex;
     justify-content: center;
-    margin-bottom: 5%;
+    margin-bottom: 50px;
 }
 
 .botonMas {
     cursor: pointer;
     border-radius: 7px;
     padding: 10px;
-    font-size: .9rem;
+    font-size: 1.1rem;
     font-style: italic;
     color: white;
     transition: 0.1s ease-in-out;
@@ -157,8 +158,14 @@ html {
 }
 
 .legals a {
+    padding: 3px;
+    text-decoration: underline;
     font-size: .9rem;
     display: grid;
+    cursor: pointer;
+}
+.legals a:hover{
+    color: blue;
 }
 
 .socialMedias i {
@@ -177,5 +184,6 @@ footer {
     height: 40px;
     color: white;
 }
+
 
 @media (max-width: 768px) {}
