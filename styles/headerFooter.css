@@ -1,0 +1,247 @@
+* {
+    font-family: 'Fira Sans';
+    box-sizing: border-box;
+    border: 0;
+    padding: 0;
+}
+
+html {
+    position: relative;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../images/curva-azul-ombre-sobre-fondo-azul-claro.jpg);
+}
+
+.all {
+    background-color: white;
+}
+
+.logo img {
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+    width: 50px;
+
+
+}
+
+.logo {
+    padding: 5px;
+}
+
+.contenedor {
+    width: 250px;
+    border-radius: 7px;
+    background-color: white;
+    opacity: 0;
+    right: 5px;
+    top: 0;
+    transition: .3s ease;
+    position: absolute;
+    z-index: -1;
+}
+
+.showContenedor {
+    opacity: 1;
+}
+
+.contenedor ul li {
+    text-align: center;
+    font-size: 1.5rem;
+    list-style-type: none;
+    padding: 50px;
+}
+
+.contenedor ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.elementosNav {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.elementosNav img {
+    width: 40px;
+}
+
+.menu {
+    background: rgb(171, 217, 176);
+    background: linear-gradient(120deg, rgba(171, 217, 176, 1) 5%, rgba(179, 207, 157, 1) 27%, rgba(136, 196, 141, 0.8435749299719888) 53%, rgba(208, 232, 220, 1) 100%);
+    z-index: 3;
+    opacity: 1;
+    margin: 20px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.burguer {
+    width: 40px;
+    height: 40px;
+    background-image: url("../images/more_5950665.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: right;
+    transition: .3s ease-in-out;
+
+}
+
+.showCruz {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    transition: .3s ease-in-out;
+    background-image: url("../images/cross-mark_8944282.png");
+    background-repeat: no-repeat;
+}
+
+
+.showVelo {
+    opacity: 0.3;
+}
+
+
+
+.containerFooter {
+    padding: 10px;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(171, 217, 176);
+    background: linear-gradient(120deg, rgba(171, 217, 176, 1) 5%, rgba(179, 207, 157, 1) 27%, rgba(136, 196, 141, 0.8435749299719888) 53%, rgba(208, 232, 220, 1) 100%);
+}
+
+.legals {
+    padding: 3px;
+}
+
+.legals a {
+    padding: 3px;
+    text-decoration: underline;
+    font-size: .9rem;
+    display: grid;
+    cursor: pointer;
+}
+
+.legals a:hover {
+    color: blue;
+}
+
+.socialMedias i {
+    cursor: pointer;
+    padding: 3px;
+}
+
+.botonMas:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    color: white;
+}
+
+.seleccionado {
+    background-color: rgb(194, 194, 194);
+    font-weight: bold;
+}
+
+@media (min-width: 768px) {
+    .all {
+        margin: auto;
+        width: calc(40% + 20rem);
+    }
+}
+
+@media (min-width: 1024px) {
+    .all {
+        width: calc(60% + 20rem);
+    }
+}
+
+@media (min-width: 1024px) {
+    .cuerpo {
+        padding: 0 0 10% 10%;
+        font-size: 1.3rem;
+    }
+
+    .logo {
+        margin-left: 20px;
+    }
+
+    .logo img {
+        width: 60px;
+    }
+
+    .burguer {
+        display: none;
+    }
+
+    nav.elementosNav {
+        width: 100%;
+        display: flex;
+        position: relative;
+        justify-content: center;
+        z-index: -1;
+    }
+
+    .contenedor ul {
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .menu {
+        margin: 0 0 20px 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .contenedor {
+
+        background-color: initial;
+        border-radius: initial;
+        opacity: 1;
+        display: flex;
+        justify-content: center;
+        position: initial;
+    }
+
+    .contenedorPrincipal {
+        width: 100%;
+        align-items: center;
+    }
+
+    .contenedor ul li {
+
+        margin-top: 10px;
+        margin-right: 100px;
+        font-size: 1.4rem;
+        color: black;
+        padding: 10px;
+        cursor: pointer;
+        transition: 0.3s ease;
+        width: 150px;
+    }
+
+    .contenedor ul li:hover {
+        transform: scale(1.1);
+        ;
+    }
+
+
+}
