@@ -12,7 +12,7 @@ html {
 body {
     margin: 0;
     padding: 0;
-    background-image: url(images/curva-azul-ombre-sobre-fondo-azul-claro.jpg);
+    background-image: url(../images/curva-azul-ombre-sobre-fondo-azul-claro.jpg);
 }
 
 .all {
@@ -71,7 +71,9 @@ body {
 
 .menu {
     background: rgb(171, 217, 176);
-    background: linear-gradient(120deg, rgba(171, 217, 176, 1) 5%, rgba(179, 207, 157, 1) 27%, rgba(136, 196, 141, 0.8435749299719888) 53%, rgba(208, 232, 220, 1) 100%);
+    background: linear-gradient(120deg, rgba(171, 217, 176, 1) 5%,
+            rgba(179, 207, 157, 1) 27%, rgba(136, 196, 141, 0.8435749299719888) 53%,
+            rgba(208, 232, 220, 1) 100%);
     z-index: 3;
     opacity: 1;
     margin: 20px;
@@ -83,7 +85,7 @@ body {
 .burguer {
     width: 40px;
     height: 40px;
-    background-image: url("images/more_5950665.png");
+    background-image: url("../images/more_5950665.png");
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -99,7 +101,7 @@ body {
     width: 20px;
     height: 20px;
     transition: .3s ease-in-out;
-    background-image: url("images/cross-mark_8944282.png");
+    background-image: url("../images/cross-mark_8944282.png");
     background-repeat: no-repeat;
 }
 
@@ -117,7 +119,9 @@ body {
     justify-content: space-between;
     align-items: center;
     background: rgb(171, 217, 176);
-    background: linear-gradient(120deg, rgba(171, 217, 176, 1) 5%, rgba(179, 207, 157, 1) 27%, rgba(136, 196, 141, 0.8435749299719888) 53%, rgba(208, 232, 220, 1) 100%);
+    background: linear-gradient(120deg, rgba(171, 217, 176, 1) 5%,
+            rgba(179, 207, 157, 1) 27%, rgba(136, 196, 141,
+                0.8435749299719888) 53%, rgba(208, 232, 220, 1) 100%);
 }
 
 .legals {
