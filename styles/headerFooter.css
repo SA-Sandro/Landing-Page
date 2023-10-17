@@ -12,7 +12,7 @@ html {
 body {
     margin: 0;
     padding: 0;
-    background-image: url(../images/curva-azul-ombre-sobre-fondo-azul-claro.jpg);
+    background-image: url(images/curva-azul-ombre-sobre-fondo-azul-claro.jpg);
 }
 
 .all {
@@ -83,7 +83,7 @@ body {
 .burguer {
     width: 40px;
     height: 40px;
-    background-image: url("../images/more_5950665.png");
+    background-image: url("images/more_5950665.png");
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -99,7 +99,7 @@ body {
     width: 20px;
     height: 20px;
     transition: .3s ease-in-out;
-    background-image: url("../images/cross-mark_8944282.png");
+    background-image: url("images/cross-mark_8944282.png");
     background-repeat: no-repeat;
 }
 
