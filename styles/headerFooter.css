@@ -177,7 +177,6 @@ footer {
 
 @media (min-width: 1024px) {
     .cuerpo {
-        padding: 0 0 10% 10%;
         font-size: 1.3rem;
     }
 
