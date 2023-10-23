@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicios</title>
-    <link rel="stylesheet" type="text/css" href="styles/stylesD.css">
+    <title>Iniciar sesión</title>
+    <link rel="stylesheet" type="text/css" href="styles/inicioSesion.css">
     <link rel="stylesheet" type="text/css" href="styles/headerFooter.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,19 +30,38 @@
                     <ul>
                         <li class="elementI"><a href="index.html">Inicio</a></li>
                         <li class="elementS"><a href="services.html">Servicios</a></li>
-                        <li class="elementD"><a href="dowloads.html">Descargas</a></li>
+                        <li class="elementD"><a href="inicioSesion.html">Iniciar sesión</a></li>
                     </ul>
                 </div>
             </nav>
         </div>
     </header>
-    <div class="all">
-        <div class="velo">
-            <main>
+    <main class="mainContainer">
 
-            </main>
+        <div class="sesionContainer">
+            <form method="post" action="php/autentificar.php" class="loginUsuario">
+                <div class="divCorreo">
+
+                    <label>Correo electrónico
+                        <input placeholder="Escribe aquí..." type="text" name="mail" class="inputUsuario">
+                    </label>
+                </div>
+                <div class="divContra">
+                    <label>Contraseña
+                        <input placeholder="Escribe aquí..." type="password" name="pass" class="inputContraseña">
+                    </label>
+
+                </div>
         </div>
-    </div>
+        <div class="buttonI">
+            <button class="btn" type="submit">Iniciar sesión</button>
+        </div>
+        </form>
+        <div class="notRegistered">
+            <p><a href="registrar.html">¿No estás registrado aún?</a></p>
+        </div>
+
+    </main>
     <footer>
         <div class="containerFooter">
             <div class="legals">
@@ -62,7 +81,6 @@
 
 
     </footer>
-    <script src="js/index.js"></script>
 </body>
 
 </html>
