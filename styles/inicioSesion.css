@@ -1,24 +1,28 @@
-main{
+main {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    
+
 }
-.sesionContainer{
+
+.sesionContainer {
     width: 80%;
     border-radius: 15px;
     box-shadow: 1px 1px 10px black;
     padding: 30px;
     background-color: white;
 }
-.divCorreo,.divContra{
+
+.divCorreo,
+.divContra {
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
-label{
+
+label {
     width: 100%;
     margin-top: 5px;
     font-weight: bold;
@@ -26,50 +30,74 @@ label{
     flex-direction: column;
     justify-content: center;
 }
-input{
-  
+
+input {
+
     margin-top: 10px;
     border: 2px solid lightgreen;
     border-radius: 40px;
     padding: 5px;
 }
-.buttonI{
+
+.buttonI {
     margin-top: 15px;
 }
-.btn{
+
+.btn {
     cursor: pointer;
     border-radius: 30px;
     font-size: calc(0.5rem + 10px);
     font-weight: bold;
-    padding:15px;
+    padding: 15px;
     color: white;
     background-color: goldenrod;
 }
-.notRegistered p a{
-    color: black;;
+
+.notRegistered p a {
+    color: black;
+    ;
     transition: 0.3s ease;
 }
-.notRegistered p a:hover{
+
+.notRegistered p a:hover {
     color: blue;
 }
-@media (min-width: 768px){
-    .sesionContainer{
-     font-size: 1.2rem;
-     padding: 40px;
-     width: 60%;
+
+@media (min-width: 768px) {
+    .sesionContainer {
+        font-size: 1.2rem;
+        padding: 40px;
+        width: 60%;
     }
- }
- @media (min-width: 1024px){
-    .sesionContainer{
-     font-size: 1.4rem;
-     padding: 60px;
-     width: 50%;
+}
+
+@media (min-width: 1024px) {
+    .sesionContainer {
+        font-size: 1.4rem;
+        padding: 60px;
+        width: 50%;
+
+
     }
- }
- @media (min-width: 1440px){
-    .sesionContainer{
-     font-size: 1.5rem;
-     padding: 70px;
-     width: 40%;
+
+    .contenedor ul li:nth-child(3) {
+        background-color: rgb(194, 194, 194);
+        font-weight: bold;
     }
- }
+}
+
+@media (min-width: 1440px) {
+    .sesionContainer {
+        font-size: 1.5rem;
+        padding: 70px;
+        width: 40%;
+    }
+}
+
+@media (min-width: 1600px) {
+    .sesionContainer {
+        font-size: 1.6rem;
+        padding: 100px;
+        width: 35%;
+    }
+}
