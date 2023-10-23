@@ -1,6 +1,118 @@
+main {
+    display: grid;
+    align-content: center;
+    min-height: 76vh;
+    margin: 20px;
+}
+
+.textoIni {
+    display: grid;
+    justify-content: center;
+    font-size: calc(1.5rem + 10px);
+    color: lightcoral;
+}
+span{
+    display: block;
+    font-family: monospace;
+    white-space: nowrap;
+    width: 27ch;
+    overflow: hidden;
+    animation: typing 3s steps(27)
+}
+@keyframes typing{
+    from {width:0px} 
+}
+
+
+label {
+    text-align: center;
+    display: grid;
+    margin: 10px;
+    font-size: 1.4rem;
+}
+
+input {
+    width: 250px;
+    padding: 10px;
+    border: 2px solid rgb(206, 234, 206);
+}
+
+form {
+    display: grid;
+    justify-content: center;
+}
+
+.nombreapellidos {
+    display: grid;
+
+
+}
+
+.loc {
+    margin-top: 5px;
+}
+
+.mailpass {
+    margin-top: 5px;
+    display: grid;
+}
+
+.phone {
+    margin-top: 5px;
+}
+
+.enviar {
+    padding: 20px;
+    display: grid;
+    justify-content: center;
+}
+
+.boton {
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: calc(1rem + 10px);
+    color: white;
+    background-color: goldenrod;
+    transition: 0.2s ease;
+}
+
+.boton:hover {
+    transform: scale(1.2);
+}
+
+.incorrecto {
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.7rem;
+    color: red;
+}
+
+.correcto {
+    padding: 10px;
+    text-align: center;
+    color: rgba(28, 131, 165, 0.661);
+    font-weight: bold;
+}
+
 @media (min-width: 1024px) {
     .contenedor ul li:nth-child(3) {
         background-color: rgb(194, 194, 194);
         font-weight: bold;
+    }
+    .textoIni{
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width:768px) {
+    label {
+        text-align: left;
+        display: flex;
+    }
+
+    input {
+        margin-left: 15px;
     }
 }

@@ -3,7 +3,8 @@
         background-color: rgb(194, 194, 194);
         font-weight: bold;
     }
-    .panel1{
+
+    .panel1 {
         width: 100%;
         margin-bottom: 30px;
         align-items: center;
@@ -13,20 +14,24 @@
         flex-direction: row-reverse;
 
     }
-   
-    .panel1 p{
+
+
+
+    .panel1 p {
         width: 800px;
         margin-right: 50px;
         padding: 0;
         line-height: 35px;
     }
-    .panel2 p{
+
+    .panel2 p {
         margin-right: 10px;
         margin-left: 20px;
         padding: 0;
         line-height: 30px;
     }
-    .panel2{
+
+    .panel2 {
         width: 100%;
         margin-bottom: 30px;
         align-items: center;
@@ -34,7 +39,8 @@
         display: flex;
         justify-content: center;
     }
-    .panel3{
+
+    .panel3 {
         width: 100%;
         margin-bottom: 30px;
         align-items: center;
@@ -44,46 +50,55 @@
         justify-content: center;
 
     }
-    .panel3 p{
+
+    .panel3 p {
         width: 800px;
         margin-right: 50px;
         padding: 0;
         line-height: 30px;
     }
 
-    
-    .img1{
+
+    .img1 {
         padding: 0;
         height: 400px;
     }
-    .img2{
+
+    .img2 {
         padding: 0;
         height: 350px;
-        
+
     }
-    .img3{
+
+    .img3 {
         padding: 0;
         height: 300px;
     }
-    .inicio,.ventajas {
+
+    .inicio,
+    .ventajas {
         width: 60%;
         margin: auto;
     }
-    .texto{
+
+    .texto {
         padding: 20px;
     }
 }
-@media (min-width: 1440px){
-    .img1{
+
+@media (min-width: 1440px) {
+    .img1 {
         padding: 0;
         height: 500px;
     }
-    .img2{
+
+    .img2 {
         padding: 0;
         height: 400px;
-        
+
     }
-    .img3{
+
+    .img3 {
         padding: 0;
         height: 400px;
     }
@@ -101,21 +116,28 @@ main {
     width: 90%;
 }
 
-.inicio,.ventajas {
+.inicio,
+.ventajas {
     border: 2px solid crimson;
     padding: 20px;
     font-weight: bold;
     text-align: center;
     font-size: calc(12px + 1rem);
 }
-.explicacion,.vtj1,.vtj2, .vtj3{
+
+.explicacion,
+.vtj1,
+.vtj2,
+.vtj3 {
     padding: 20px;
     text-align: justify;
     font-size: calc(1px + 1rem);
 }
 
-.img0,.img1,.img2,.img3{
+.img0,
+.img1,
+.img2,
+.img3 {
     padding: 20px;
     width: 100%;
 }
-

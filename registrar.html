@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
-    <link rel="stylesheet" type="text/css" href="styles/index.css">
+    <title>Servicios</title>
+    <link rel="stylesheet" type="text/css" href="styles/stylesD.css">
     <link rel="stylesheet" type="text/css" href="styles/headerFooter.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +16,6 @@
 </head>
 
 <body>
-
     <header class="contenedorPrincipal">
 
         <div class="menu">
@@ -40,32 +39,49 @@
     <div class="all">
         <div class="velo">
             <main>
-                <div class="presentacion">
-                    <div class="fondo">
-                        <img class="imagenPresentacion" src="images/ninos-mirando-juntos-caracol.jpg">
-                    </div>
-                    <div class="texto">
-                        <h1 class="tituloPrincipal">Nature Register</h1>
-                        <h6 class="lema">
-                            ¡Registra y organiza tus observaciones!
-                        </h6>
-                    </div>
-                </div>
-                <div class="cuerpo">
-                    <p>
-                        ¿Tienes indecentes cantidades de imágenes de animales y plantas guardadas en carpetas y en
-                        galería?
-                        ¿No logras encontrar la imagen que estabas buscando entre tantas imágenes?
-                        Con Nature Register ahora puedes solucionar todos estos problemas.
-                    </p>
-                    <p>
-                        Nature Register se trata de una base de datos personal en la cual puedes registrar toda las
-                        observaciones de biodiversidad que has realizado
-                        con el objetiva de mantenerlas organizadas y operativas para su uso y consulta.
+                <div class="inicio">
+                    <p class="textoIni">
+                        <span>Regístrese para la descarga</span>
                     </p>
                 </div>
-                <div class="sabermas">
-                    <button class="botonMas"><a href="services.html">Para saber más...</a></button>
+                <div class="formulario">
+                    <form id="formulario1" method="post" action="php/registrar.php">
+                        <div class="nombreapellidos">
+                            <label for="name">Nombre:
+                                <input type="text" placeholder="Nombre..." name="nombre" id="name">
+                            </label>
+                            <label for="surname">Apellidos:
+                                <input type="text" placeholder="Apellidos..." name="apellidos" id="surname">
+                            </label>
+                        </div>
+                        <div class="loc">
+                            <label for="locate">Localidad:
+                                <input type="text" placeholder="Localidad..." name="localidad" id="locate">
+                            </label>
+                        </div>
+                        <div class="mailpass">
+                            <label for="mail">E-mail:
+                                <input type="email" placeholder="Email..." name="correo" id="mail">
+                            </label>
+                            <label for="pass">Contraseña:
+                                <input placeholder="Contraseña..." type="password" name="contraseña" id="pass">
+                            </label>
+                        </div>
+                        <div class="phone">
+                            <label for="phone">Teléfono:
+                                <input placeholder="Teléfono..." type="number" name="numero" id="phone">
+                            </label>
+                        </div>
+                        <div class="enviar">
+                            <button class="boton" type="submit">
+                                Registrarse
+                            </button>
+                        </div>
+                    </form>
+                    
+                    <div class="messageContainer">
+                        
+                    </div>
                 </div>
             </main>
         </div>
@@ -89,8 +105,9 @@
 
 
     </footer>
-    <script src="js/index.js"></script>
 
 </body>
+<script src="js/index.js"></script>
+<script src="js/registrar.js"></script>
 
 </html>
